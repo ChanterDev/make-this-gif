@@ -1,0 +1,35 @@
+:root {
+    --accent-color: #d8d800;
+    --accent-color-2: #2f2f2f;
+    --bg-color: #111;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+input, a, h1 {
+    font-family: monospace;
+    font-size: 125%;
+    display: block;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+input, h1 {
+    color: var(--accent-color);
+}
+
+a, h1 {
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    color: var(--accent-color-2);
+    background-color: var(--accent-color);
+    border: solid;
+    border-color: var(--accent-color);
+    border-radius: 15px;
+}
