@@ -8,25 +8,50 @@ body {
     background-color: var(--bg-color);
 }
 
-input, a, h1 {
+input, a, h1, h2, label, .setting {
     font-family: monospace;
-    font-size: 125%;
     display: block;
     width: 25%;
     margin: auto;
     margin-bottom: 2%;
 }
 
-input, h1 {
+input::file-selector-button {
+    font-size: 100%;
+}
+
+.setting {
+    display: flex;
+}
+
+.setting label, .setting input {
+    display: inline;
+    width: 100%;
+    margin: auto;
+}
+
+label {
     color: var(--accent-color);
 }
 
-a, h1 {
+input, a, h2, label {
+    font-size: 125%;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h1, h2 {
+    color: var(--accent-color);
+}
+
+a, h1, h2 {
     text-align: center;
     text-decoration: none;
 }
 
-a {
+a, input {
     color: var(--accent-color-2);
     background-color: var(--accent-color);
     border: solid;

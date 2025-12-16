@@ -8,9 +8,14 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <h1></h1>
-    <noscript><h1>Please enable JS on this page</h1></noscript>
-    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp">
+    <h1>Make This GIF</h1>
+    <noscript><h2>Please enable JS on this page</h2></noscript>
+    <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/webp" style="display: none;">
+    <a href="javascript:image.click();" id="file-input-button">Upload File</a>
+    <div class="setting">
+        <label>Quality</label>
+        <input type="number" id="compress" name="compress" min="1" max="99" value="80">
+    </div>
     <a href="" id="download-link">Download</a>
 </body>
 </html>
